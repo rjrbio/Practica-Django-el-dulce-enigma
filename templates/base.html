@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El dulce enigma</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    
+    {% include "includes/cabecera.html" %}
+   <main>
+    {% block content %}
+    {% endblock %}
+   </main>
+    {% include "includes/pie.html" %}
+   
+</body>
+
+</html>
